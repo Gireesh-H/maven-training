@@ -1,14 +1,32 @@
 package clinic.programming.training;
 
-public class Application {
+import java.util.Arraylist;
+import java.util.List;
+
+public class Application 
+{
+    public greet()
+    {
+        List<String> greetings = new Arraylist<>();
+        greetings.add("Hello");
+
+        for(String greeting:greetings)
+        {
+            System.out.println("Greeting:" + greeting);
+        }
+    }
     
-    public Application() {
+    public Application() 
+    {
         System.out.println ("Inside Application");
     }
 
+
     // method main(): ALWAYS the APPLICATION entry point
-    public static void main (String[] args) {
+    public static void main (String[] args) 
+    {
     	System.out.println ("Starting Application");
-	Application app = new Application();
+	    Application app = new Application();
+        app.greet();
     }
 }
