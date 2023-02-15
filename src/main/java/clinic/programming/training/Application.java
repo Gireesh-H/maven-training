@@ -1,6 +1,6 @@
 package clinic.programming.training;
 
-import java.util.Arraylist;
+import java.util.ArrayList;
 import java.util.List;
 import org.apache.commons.lang3.StringUtils;
 
@@ -12,9 +12,9 @@ public class Application
         String[] seperateWords = StringUtils.split(words, ' ');
         return (seperateWords == null)? 0:seperateWords.length;
     }
-    public greet()
+    public void greet()
     {
-        List<String> greetings = new Arraylist<>();
+        List<String> greetings = new ArrayList<>();
         greetings.add("Hello");
 
         for(String greeting:greetings)
